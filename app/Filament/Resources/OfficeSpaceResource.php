@@ -32,10 +32,8 @@ class OfficeSpaceResource extends Resource
                         table: 'office_spaces',
                         column: 'name',
                         ignoreRecord: true,
-                    )
-                    ->errorMessage('Nama ini sudah digunakan, silakan pilih nama lain.'),
+                    ),
                     
-                
                 Forms\Components\TextInput::make('address')
                     ->required()
                     ->maxlength(255),
